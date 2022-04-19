@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	lang="pt-br">
+<h:head>
+	<meta http-equi="Content=Type" content="text/html; charset=ISO-8859-1"/>
+	<title>Formulario</title>
+</h:head>
+	
+<body>
+	<h:form>
+	
+	numero1: <h:inputText value = "#{pageBean.numero1}"></h:inputText>
+	<h:commandButton value="Numero1" action= "#{pageBean.numero1}"></h:commandButton>
+	</h:form>
+	
+	numero2: <h:inputText value = "#{pageBean.numero2}"></h:inputText>
+	<h:commandButton value="Numero2" action= "#{pageBean.numero2}"></h:commandButton>
+	</h:form>
+	
+	numero3: <h:inputText value = "#{pageBean.numero3}"></h:inputText>
+	<h:commandButton value="Numero3" action= "#{pageBean.numero3}"></h:commandButton>
+	</h:form>
+	
+</body>
+</html>
