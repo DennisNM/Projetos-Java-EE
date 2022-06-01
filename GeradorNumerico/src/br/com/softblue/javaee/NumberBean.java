@@ -17,11 +17,11 @@ public class NumberBean implements Serializable {
 	private Integer qtde;
 	private Integer min;
 	private Integer max;
-	
+	//array list de numero
 	private List<Integer> numeros = new ArrayList<>();
-
+// método para gerar numero aleatorios 
 	public String gerar() {
-		
+		// classe radom do java
 		for (int i = 0; i < qtde; i++) {
 			int n = random.nextInt(max - min) + min + 1;
 			numeros.add(n);
@@ -29,7 +29,7 @@ public class NumberBean implements Serializable {
 		
 		return null;
 	}
-
+// métodos get and setters
 	public Integer getQtde() {
 		return qtde;
 	}
