@@ -7,15 +7,15 @@
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-	<title>Gerador de Números Aleatórios</title>
+	<title>Gerador de NÃºmeros AleatÃ³rios</title>
 </h:head>
 
 <body>
 	<h:form>
 		<h:panelGrid columns="2">
-			<f:facet name="header">Gerador de Números Aleatórios</f:facet>
-		
-			Quantidade de números:
+			<f:facet name="header">Gerador de NÃºmeros AleatÃ³rios</f:facet>
+		<! -- selecioanr a quantidade d enumeros --> 
+			Quantidade de nÃºmeros:
 			<h:selectOneMenu value="#{numberBean.qtde}">
 				<f:selectItem itemValue="1" itemLabel="1" />
 				<f:selectItem itemValue="2" itemLabel="2" />
@@ -23,11 +23,11 @@
 				<f:selectItem itemValue="4" itemLabel="4" />
 				<f:selectItem itemValue="5" itemLabel="5" />
 			</h:selectOneMenu>
-		
-			Valor mínimo:
+		<! --bean para gerar numeros-->
+			Valor mÃ­nimo:
 			<h:inputText value="#{numberBean.min}" size="4" />
 			
-			Valor máximo:
+			Valor mÃ¡ximo:
 			<h:inputText value="#{numberBean.max}" size="4" />
 		</h:panelGrid>
 
