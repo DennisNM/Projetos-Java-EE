@@ -11,7 +11,7 @@ import javax.inject.Named;
 
 public class IndexBean implements Serializable{
 
-
+// projeto apra retorna mensagem
 	public String getMensagem() {
 	
 		return "Texto vindo do Bean";
