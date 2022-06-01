@@ -9,13 +9,13 @@ import javax.inject.Named;
 @Named
 @RequestScoped
 public class PageBean implements Serializable {
-
+// string com nome da pagina
 	private String page;
-	
+	// enem da pagina
 	public enum pages{
 		page_a,page_b
 	}
-	
+	/get e set da pagina
 	public String getPage() {
 		return page;
 	}
@@ -24,7 +24,7 @@ public class PageBean implements Serializable {
 		this.page = page;
 	} 	
 
-	
+	// retornar a pagina  com if else composto
 	public pages goTo() {
 		if ("a".equals(page)) {
 			
