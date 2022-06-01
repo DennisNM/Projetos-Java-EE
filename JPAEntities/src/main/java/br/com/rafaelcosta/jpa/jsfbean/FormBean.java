@@ -1,5 +1,5 @@
 package br.com.rafaelcosta.jpa.jsfbean;
-
+// imports das classes
 import java.io.Serializable;
 
 import javax.ejb.EJB;
@@ -13,15 +13,16 @@ import javax.inject.Named;
 
 import br.com.rafaelcosta.jpa.ejbbean.TarefaBean;
 import br.com.rafaelcosta.jpa.model.Tarefa;
-
+// nome de ligação do java com HTML no jsf
 @Named("form")
 @RequestScoped
 public class FormBean implements Serializable {
-	
+	// varaivel do tipi TarefaBean Do ejb
 	@EJB
+	
 	private TarefaBean tarefaBean;
 
-	//FacesCotext é usado para gravar todos os eventos que acontece na tela. Ex: Cliques, Mensagens e etc.
+	//FacesCotext é usado para pegar o contexto em que a pagina está inserido .
 	@Inject
 	private FacesContext context;
 	
