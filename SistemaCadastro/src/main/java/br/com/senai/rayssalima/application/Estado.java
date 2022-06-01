@@ -1,7 +1,7 @@
 package br.com.senai.rayssalima.application;
 
 public class Estado {
-
+// modelo de Estado
 	private String nome;
 	private String sigla;
 	
