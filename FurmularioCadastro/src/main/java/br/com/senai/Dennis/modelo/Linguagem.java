@@ -6,7 +6,7 @@ public class Linguagem {
 	
 	
 	public static final Linguagem[] LINGUAGENS;
-
+// atributos estaticos para sererm chamados
 	static {
 			LINGUAGENS = new Linguagem[5];	
 			LINGUAGENS[0] = new Linguagem(1,"Java");
@@ -17,7 +17,7 @@ public class Linguagem {
 			
 	}
 	
-
+// construtor
 	public Linguagem(Integer id, String nome) {
 		super();
 		this.id = id;
