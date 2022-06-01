@@ -17,7 +17,7 @@ import br.com.rafaelcosta.jpa.model.Tarefa;
 @Named("form")
 @RequestScoped
 public class FormBean implements Serializable {
-	// varaivel do tipi TarefaBean Do ejb
+	// varaivel do tipo TarefaBean Do ejb
 	@EJB
 	
 	private TarefaBean tarefaBean;
@@ -31,7 +31,7 @@ public class FormBean implements Serializable {
 	private Integer tarefaId;
 	
 	private Tarefa tarefa;
-	
+	// método para grvar no banco
 	public void gravar(AjaxBehaviorEvent event) {
 		if(tarefa.getId()==null) {
 			tarefaBean.inserir(tarefa);
@@ -39,7 +39,7 @@ public class FormBean implements Serializable {
 			tarefaBean.atualizar(tarefa);
 		}		
 	}
-	
+	// método para pesquisar no banco
 	public void pesquisar(AjaxBehaviorEvent event) {
 		tarefa = tarefaBean.carregar(tarefaId);
 		
@@ -49,7 +49,7 @@ public class FormBean implements Serializable {
 		}
 		tarefaId = null;		
 	}
-	
+	//excluir 
 	public void excluir(AjaxBehaviorEvent event) {
 		tarefaBean.excluir(tarefa);
 		tarefa = null;
