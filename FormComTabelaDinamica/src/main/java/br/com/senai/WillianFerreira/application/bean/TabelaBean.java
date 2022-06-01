@@ -11,7 +11,7 @@ import javax.inject.Named;
 import br.com.senai.WillianFerreira.application.model.Despesas;
 
 
-@SuppressWarnings("serial") //tira anuncios de advert�ncia
+@SuppressWarnings("serial") //tira a advert�ncia
 @Named("tabela")
 @SessionScoped //tempo de vida da p�gina, o "session" mant�m os dados enquanto o navegador estiver aberto
 public class TabelaBean implements Serializable{
@@ -29,7 +29,7 @@ public class TabelaBean implements Serializable{
 	
 	
 	
-	
+	//get and setters das variaveis
 	public String getUser() {
 		return user;
 	}
@@ -72,7 +72,7 @@ public class TabelaBean implements Serializable{
 
 	
 	
-	
+	// método para inserir na lista
 	
 	public String inserir(String data,String desc,Double Valor) {
 		
@@ -86,20 +86,20 @@ public class TabelaBean implements Serializable{
 		return null;
 		
 	}
-	
+	//metódo para excluir
 	public String excluir(Despesas despesa) {
 		//removendo o objeto da lista 
 		despesas.remove(despesa);
 		
 		return null;
 	}
-	
+	// método para editar
 	public String editar(Despesas despesa) {
 		despesa.setEdit(true); 
 		
 		return null;
 	}
-	
+	// método para aparecer butão
 	public String gravar (Despesas despesa) {
 		despesa.setEdit(false);
 		
@@ -117,7 +117,7 @@ public class TabelaBean implements Serializable{
 	public void setA(Boolean a) {
 		this.a = a;
 	}
-
+//método para fazer login 
 	public String doLogin() {
 		
 		if("willian".equals(user) && "admin".equals(senha)) {
