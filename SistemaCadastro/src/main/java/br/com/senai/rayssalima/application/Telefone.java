@@ -1,11 +1,11 @@
 package br.com.senai.rayssalima.application;
 
 public class Telefone {
-	
+	// enums ("valores fixos")
 	enum Tipotelefone {
 		FIXO, CELULAR;
 	}
-
+// classe modelo de Telefone
 	private String ddd;
 	private String numero;
 	public String getDdd() {
