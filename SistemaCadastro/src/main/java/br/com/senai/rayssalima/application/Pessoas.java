@@ -1,6 +1,7 @@
 package br.com.senai.rayssalima.application;
 
 public class Pessoas {
+// classe modelo de Pesooa
 	private String nome;
 	private String email;
 	private String dataNascimento;
