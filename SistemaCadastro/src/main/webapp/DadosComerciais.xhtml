@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	lang="pt-br">
+<h:head>
+	<meta http-equi="Content=Type" content="text/html; charset=ISO-8859-1"/>
+	<title>Dados Comerciais</title>
+	<h:outputStylesheet library="css" name="style.css" />
+</h:head>
+<body>
+	<h:form>
+		<h:panelGrid columns ="2">
+				<f:facet name="Header">
+					<h2>Dados Comerciais</h2>
+				</f:facet>
+				Nome da Empresa:
+				<h:inputText value="#{cad.pessoas.nomeEmpresa}"></h:inputText>
+				Cargo:
+				<h:inputText value="#{cad.pessoas.cargo}"></h:inputText>
+				Salário:
+				<h:inputText value="#{cad.pessoas.salario}"> <f:convertNumber locale="pt_BR" /></h:inputText>
+				Rua:
+				<h:inputText value="#{cad.pessoas.enderecoComercial.rua}"></h:inputText>
+				Número:
+				<h:inputText value="#{cad.pessoas.enderecoComercial.num}"></h:inputText>
+				Complemento:
+				<h:inputText value="#{cad.pessoas.enderecoComercial.complemento}"></h:inputText>
+				Bairro:
+				<h:inputText value="#{cad.pessoas.enderecoComercial.bairro}"></h:inputText>
+				CEP:
+				<h:inputText value="#{cad.pessoas.enderecoComercial.cep}"></h:inputText>
+				Cidade:
+				<h:inputText value="#{cad.pessoas.enderecoComercial.cidade}"></h:inputText>
+				Estado:
+				<h:selectOneMenu value="#{cad.pessoas.enderecoComercial.estado.sigla}">
+					<f:selectItem itemValue="Selecione" noSelectionOption="true" />
+					<f:selectItems value="#{cad.estados}" var="e" itemValue="#{e.sigla}" itemLabel="#{e.sigla} - #{e.nome}" />
+				</h:selectOneMenu>
+				Telefone comercial:
+				<h:panelGroup>
+					<h:inputText value="#{cad.pessoas.telefoneComercial.ddd}" size="2" maxlength="2" />
+					<h:inputText value="#{cad.pessoas.telefoneComercial.numero}" />
+				</h:panelGroup>
+				
+				<h:commandButton value="Anterior" action="DadosPessoais"/>
+				<h:commandButton value="Próximo" action="AreasInteresse"/>
+		</h:panelGrid>
+	</h:form>
+	
+	
+</body>
+</html>
