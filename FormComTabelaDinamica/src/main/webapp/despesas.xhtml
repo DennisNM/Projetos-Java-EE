@@ -14,25 +14,25 @@
 </h:head>
 <script>
 
-//Fazendo a validaÁ„o dos campos
+//Fazendo a valida√ß√£o dos campos
 		function verificarCampos(){
-			//Vari·veis recebendo o valor das vari·veis da classe "Despesas"
+			//Vari√°veis recebendo o valor das vari√°veis da classe "Despesas"
 			var data = document.getElementById("f:data").value;
 			var descricao = document.getElementById("f:descricao").value;
 			var valor = document.getElementById("f:valor").value;
-		//LaÁo para validar se algum campo estiver vazio, irar mostrar um alerta na tela
+		//La√ßo para validar se algum campo estiver vazio, irar mostrar um alerta na tela
 			if(data ==""){
-				alert("Data n„o Preenchida");
+				alert("Data n√£o Preenchida");
 				return false;
 				
 			}else{
 				if(descricao ==""){
-					alert("DescriÁ„o n„o Preenchido");
+					alert("Descri√ß√£o n√£o Preenchido");
 					return false;
 				}else{
 					
 					if(valor ==""){
-					alert("Valor n„o Preenchido");
+					alert("Valor n√£o Preenchido");
 					return false;}
 					
 					
@@ -49,8 +49,8 @@
 </center>
 <h:outputStylesheet library = "css" name = "styles.css" /> 
 
-	<!-- Criando um formul·rio fixo, usu·rio dever· colocar a data, a descriÁ„o e um valor -->
-	<!-- Todas as informaÁıes -->
+	<!-- Criando um formul√°rio fixo, usu√°rio dever√° colocar a data, a descri√ß√£o e um valor -->
+	<!-- Todas as informa√ß√µes -->
 	<h:form id="f">
 	<center>
 	<h:outputText value="Despesas"/>
@@ -64,7 +64,7 @@
 	</h:column>
 	
 	<h:column>
-	<h:outputText value="DescriÁ„o"></h:outputText>
+	<h:outputText value="Descri√ß√£o"></h:outputText>
 	<br/>
 	<h:inputText value="#{tabela.desc1}" id="descricao"></h:inputText>
 	</h:column>
@@ -91,7 +91,7 @@
 			
 			<tr>
 			
-			<th class="cabecalho">cabeÁ„o</th>
+			<th class="cabecalho">cabe√ß√£o</th>
 			<th class="cabecalho">data</th>
 			<th class="cabecalho">descricao</th>
 			<th class="cabecalho">valor</th>
@@ -103,7 +103,7 @@
 		<tr>
 				<td class="colNumero" colspan="1">#{st.index +1}</td>
 				
-				
+				<! -- redered renderiza algo depende de alguma especifica√ß√£o que voc√™ colocar -->
 				<td class="colData" colspan="1">
 				<h:outputText value ="#{d.data}" rendered = "#{!d.edit}"/>
 				<h:inputText value ="#{d.data}" rendered = "#{d.edit}"/>
@@ -137,7 +137,7 @@
 		
 		
 		<h:panelGroup rendered="#{tabela.despesas.size() == 0}">
-		<h:outputText value="N„o cadastrado" styleClass="message" ></h:outputText>
+		<h:outputText value="N√£o cadastrado" styleClass="message" ></h:outputText>
 		</h:panelGroup>
 		</center>
 	</h:form>
