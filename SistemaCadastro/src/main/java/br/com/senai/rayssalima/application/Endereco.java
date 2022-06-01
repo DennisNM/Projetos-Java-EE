@@ -1,7 +1,7 @@
 package br.com.senai.rayssalima.application;
 
 public class Endereco {
-	
+	// classe modelo de endereço
 	private String rua;
 	private Integer num;
 	private String complemento;
@@ -9,6 +9,7 @@ public class Endereco {
 	private String cep;
 	private String cidade;
 	private Estado estado;
+
 	
 	public String getRua() {
 		return rua;
