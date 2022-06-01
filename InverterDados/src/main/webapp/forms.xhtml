@@ -9,15 +9,16 @@
 
 <h:head>
 	<meta http-equi="Content=Type" content="text/html; charset=ISO-8859-1"/>
-	<title>Formul�rio</title>
+	<title>Formulário</title>
 </h:head>
 
 <body>
 
-<h1>Invers�o de Palavra</h1>
+<h1>Inversão de Palavra</h1>
 
 <h:form>
 Digite a palavra que deseja inverter: <h:inputText value= "#{pageBean.texto}"/>
+	<! -- chamando o método inversão na VIEW -->
 <h:commandButton value="Inverter" action="#{pageBean.inversao}"></h:commandButton>
 </h:form>
 
