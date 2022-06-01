@@ -8,7 +8,7 @@
 	lang="pt-br">
 <h:head>
 	<meta http-equi="Content=Type" content="text/html; charset=ISO-8859-1"/>
-	<title>Página Cadastro</title>
+	<title>PÃ¡gina Cadastro</title>
 </h:head>
 	
 <body>
@@ -23,7 +23,7 @@
 	<h:inputText value="#{cadastro.email}"></h:inputText>
 	Senha:
 	<h:inputText value="#{cadastro.senha1}"></h:inputText>
-	Confirmação de senha:
+	ConfirmaÃ§Ã£o de senha:
 	<h:inputText value="#{cadastro.senha2}"></h:inputText>
 	<h:selectOneRadio>
 	
@@ -35,11 +35,11 @@
 	</h:selectOneRadio>
 	
 	<h:selectBooleanCheckbox value="#{cadatro.receberEmails}">Deseja Receber Email</h:selectBooleanCheckbox>
-	Observaçoes:
+	ObservaÃ§oes:
 	<h:inputTextarea value="#{cadastro.observacao}" rows="4" cols="30"></h:inputTextarea>
-	linguagesn de progamação
+	linguagesn de progamaÃ§Ã£o
 	<h:selectManyCheckbox value="!{cadastro.linguagens}">
-	
+	<! -- chamando  a lista aqiu no select item -->
 	 <f:selectItems Value="#{cadastro.listaLinguagens}" var="l" itemValue="#{l.id}" itemLabel="#{l.nome}"/>
 	 
 	 </h:selectManyCheckbox>
