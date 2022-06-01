@@ -1,7 +1,7 @@
 package br.com.senai.WillianFerreira.application.model;
 
 public class Despesas {
-//atributos primitivos n�o podem ser nulos, por isso usamos os wrappers
+//atributos primitivos não podem ser nulos, por isso usamos os wrappers para quando iniciamos ele não dar erro
 private String data;
 private String descricao;
 private Double valor;
@@ -11,7 +11,7 @@ public String getData() {
 	return data;
 }
 
-
+// construtures
 public Despesas(String data, String descricao, Double valor) {
 	super();
 	this.data = data;
@@ -26,7 +26,7 @@ public Despesas() {
 	this.valor = valor;
 }
 
-
+//método get and setters
 public void setData(String data) {
 	this.data = data;
 }
