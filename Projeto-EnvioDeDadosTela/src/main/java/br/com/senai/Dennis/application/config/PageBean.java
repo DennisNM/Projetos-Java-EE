@@ -13,7 +13,7 @@ import javax.inject.Named;
 
 public class PageBean implements Serializable {
 	private String nome;
-
+// inject para "chamar" o flash
 	@Inject
 	private Flash flash;
 
@@ -24,7 +24,7 @@ public class PageBean implements Serializable {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+// flash  na view ("o que aparece")
 	public String processar() {
 		flash.put("nomeDoUsuario", nome);
 
