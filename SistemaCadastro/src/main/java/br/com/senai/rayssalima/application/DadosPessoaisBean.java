@@ -18,6 +18,7 @@ private Pessoas pessoas;
 
 public Pessoas getPessoas() {
 	if (pessoas == null) {
+		//instancias das classes caso seja nulo
 		pessoas = new Pessoas();
 		pessoas.setEnderecoResidencial(new Endereco());
 		pessoas.getEnderecoResidencial().setEstado(new Estado());
@@ -29,7 +30,7 @@ public Pessoas getPessoas() {
 	}
 	return pessoas;
 }
-
+// get e set d lista
 	public List<Estado> getEstados() {
 	return Lista.ESTADOS;
 }
