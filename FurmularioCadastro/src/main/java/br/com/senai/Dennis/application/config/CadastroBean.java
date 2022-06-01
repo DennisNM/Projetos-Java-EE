@@ -12,7 +12,7 @@ import br.com.senai.Dennis.modelo.Linguagem;
 @Named("cadastro")
 @RequestScoped
 @SuppressWarnings("serial")
-
+// pagina de ligação com html
 public class CadastroBean implements Serializable {
 
 	private String nome;
@@ -24,7 +24,7 @@ public class CadastroBean implements Serializable {
 	private String observacao;
 	private Integer[] linguagens;
 	
-	
+	// get and setters
 	public Linguagem[] getlistaLinguagens() {
 		
 		return Linguagem.LINGUAGENS;
