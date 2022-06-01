@@ -14,6 +14,7 @@ import br.com.senai.WillianFerreira.application.model.Despesas;
 @SuppressWarnings("serial") //tira a advert�ncia
 @Named("tabela")
 @SessionScoped //tempo de vida da p�gina, o "session" mant�m os dados enquanto o navegador estiver aberto
+				  // assinatura de método 
 public class TabelaBean implements Serializable{
 	//Criando uma Lista com todos os objetos
 	private List<Despesas> despesas = new ArrayList<>();
