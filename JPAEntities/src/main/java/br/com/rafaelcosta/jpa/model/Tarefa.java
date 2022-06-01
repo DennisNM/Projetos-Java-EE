@@ -3,11 +3,11 @@ package br.com.rafaelcosta.jpa.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-//Entity declara que está classe será uma entidade
+//Entity declara é uma entidade no banco de dados basicamente vira um tabela lá
 @Entity
 public class Tarefa {
-	//@id declara a variável "id" como primary key
-	//GeneratedValue implementa automaticamente o valor no id
+	//@id Id do banco
+	//GeneratedValue è como se fosse o auto_increment do banco de dados no id
 	@Id
 	@GeneratedValue
 	private Integer id;
@@ -17,7 +17,7 @@ public class Tarefa {
 	private Integer prioridade;
 	
 	private Boolean concluida;
-
+//get and setters
 	public Integer getId() {
 		return id;
 	}
