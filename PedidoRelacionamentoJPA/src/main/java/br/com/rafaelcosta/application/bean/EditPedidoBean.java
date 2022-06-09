@@ -48,7 +48,7 @@ public class EditPedidoBean implements Serializable {
 	public List<Cliente> getClientes() {
 		return clientes;
 	}
-
+//lista
 	public List<Produto> getProdutos() {
 		return produtos;
 	}
