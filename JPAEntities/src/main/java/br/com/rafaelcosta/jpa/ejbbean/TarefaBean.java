@@ -12,6 +12,7 @@ public class TarefaBean {
 	//Responsável por gerenciar o banco de dados e persistir no banco
 	@PersistenceContext
 	private EntityManager em;
+	//variavel para gerenciar entidade
 	// inserir
 	public void inserir(Tarefa tarefa) {
 		em.persist(tarefa);
