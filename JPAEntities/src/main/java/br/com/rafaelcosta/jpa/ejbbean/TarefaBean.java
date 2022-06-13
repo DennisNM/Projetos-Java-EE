@@ -6,6 +6,7 @@ import javax.persistence.PersistenceContext;
 
 import br.com.rafaelcosta.jpa.model.Tarefa;
 // tipo sessão EJB
+// EJB facilita  desenvolvimento rápido
 @Stateless
 public class TarefaBean {
 	//Responsável por gerenciar o banco de dados e persistir no banco
