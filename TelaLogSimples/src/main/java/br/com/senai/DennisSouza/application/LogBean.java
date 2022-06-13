@@ -10,18 +10,19 @@ import javax.inject.Named;
 @Named
 @RequestScoped
 public class LogBean implements Serializable {
-
+// bean de login
+	
 	//declaração de variavel
 	private String nome;
 	private String senha;
 
-	//da um aviso no console o bean vai ser construido
+	// bean vai ser construido ai ele da um sysout "Bean Criado"
 	@PostConstruct
 	public void onCreate() {
 		System.out.println("Bean Criado");
 	}
 
-	//da um aviso no console o bean vai ser destruido
+	//bean vai ser destruido ai ele da um sysout "Bean será destruído"
 	@PreDestroy
 	public void onDestroy() {
 		System.out.println("Bean será destruído");
@@ -43,7 +44,8 @@ public class LogBean implements Serializable {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-
+// se o login estiver correto ele retornar a pagian de sucesso 
+	// login é estatico
 	public String doLogin() {
 		if("abc".equals(nome) && "123".equals(senha)) {
 			return "sucesso";
